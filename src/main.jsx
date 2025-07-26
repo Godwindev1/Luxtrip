@@ -15,7 +15,7 @@ import ReactDOM from "react-dom/client";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <App/>,
     errorElement: <ErrorPage/>
   },

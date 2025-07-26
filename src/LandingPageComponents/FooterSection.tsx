@@ -56,21 +56,21 @@ function Get_icon({srcimage})
 
 export function FootBar()
 {
+    
     return(
         <>
             <nav className='w-full h-fit flex justify-between items-center pl-16 pr-16 bg-[#4D594A] border-b border-[#0000002f] '>
                     <div className='flex justify-center items-center'><a  href="#"> <img className='h-[100px] w-[100px] ' src="src/assets/logo.png"   /> </a></div>
                    
                    <div className=' w-max flex justify-between items-center gap-13'>
-                        <TransparentButtonComponent link={""} name={"Stays"} />
-                        <TransparentButtonComponent link={""} name={"Services"} />
-                        <TransparentButtonComponent link={""} name={"Events"} />
-                        <TransparentButtonComponent link={""} name={"About us"} />
+                                  <TransparentButtonComponent link={"#features"} name={"Features"} />
+                                  <TransparentButtonComponent link={"#About"} name={"About us"} />
+                                  <TransparentButtonComponent link={"#Nav"} name={"Back to Top Page"} />
                    </div>
 
                     <div className="flex justify-center gap-4 items-center h-full w-fit">
-                        <Get_icon srcimage={"./src/assets/tw.svg"}/>
-                        <Get_icon srcimage={"./src/assets/ig.svg"}/>
+                        <a href="https://x.com/isAme__" target='_blank'><Get_icon srcimage={"./src/assets/tw.svg"}/></a>
+                        <a href="https://www.instagram.com/oluowho_g/" target='_blank'><Get_icon srcimage={"./src/assets/ig.svg"}/></a>
                     </div>
             </nav>
         </>
@@ -82,7 +82,7 @@ export function AdvertFeatures()
     return(
         <>
         
-                <div className='h-[75vh] w-full bg-white pt-8 pb-8 flex justify-center items-center pl-20 pr-16'>
+                <div id='features' className='h-[75vh] w-full bg-white pt-8 pb-8 flex justify-center items-center pl-20 pr-16'>
                     <div className='h-full flex justify-between items-center w-full '>
                         <InfoCard title={"✈️ Top Hotel Deals Worldwide"} subtitle={"Find affordable stays, resorts & vacation rentals with Luxtrip"} image={"src/assets/deals.png"} />
                         <InfoCard title={"🏨 Explore Global Hotel Offers"} subtitle={"Book budget hotels, luxury resorts & unique stays—only on Luxtrip"} image={"src/assets/explore.png"} />
@@ -99,12 +99,11 @@ export default function FooterSection()
 {
     
 
-
     return(
         <>
                 <hr />
 
-                <div className='h-[25vh] w-full flex justify-center items-start bg-white text-[#0b1c0e] p-16 text-justify'>
+                <div id='Footer' className='h-[25vh] w-full flex justify-center items-start bg-white text-[#0b1c0e] p-16 text-justify'>
                     Search affordable hotels across major destinations worldwide with Luxtrip, powered by Amadeus. Discover great deals on hotels that match your needs—whether you're planning a quick getaway or a long vacation.
                     Booking is easy, fast, and flexible. Start saving on your next stay with exclusive discounts available through Luxtrip.
                     Looking for more? Explore thousands of options including flights, car rentals, trains, and buses—all in one place with Luxtrip.

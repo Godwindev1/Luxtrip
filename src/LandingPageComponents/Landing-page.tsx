@@ -22,14 +22,14 @@ export function NavBar()
 {
     return(
         <>
-            <nav className='w-full h-fit flex justify-between items-center pl-16 pr-16 bg-[#4D594A] border-b border-[#0000002f] '>
+            <nav id='Nav' className='w-full h-fit flex justify-between items-center pl-16 pr-16 bg-[#4D594A] border-b border-[#0000002f] '>
                     <div className='flex justify-center items-center'><a  href="#"> <img className='h-[100px] w-[100px] ' src="src/assets/logo.png"   /> </a></div>
                    
                    <div className=' w-max flex justify-between items-center gap-13'>
-                        <TransparentButtonComponent link={""} name={"Stays"} />
-                        <TransparentButtonComponent link={""} name={"Services"} />
-                        <TransparentButtonComponent link={""} name={"Events"} />
-                        <TransparentButtonComponent link={""} name={"About us"} />
+                        <TransparentButtonComponent link={"#features"} name={"Features"} />
+                        <TransparentButtonComponent link={"#About"} name={"About us"} />
+                        <TransparentButtonComponent link={"#Footer"} name={"newsletter"} />
+
                    </div>
 
                         <ul className='flex flex-row justify-between items-center gap-4'>
@@ -91,8 +91,9 @@ export function Landing_page()
             <InputBar/>
             <AdvertFeatures/>
             <AdvertFrames/>
-            <OffersComponents/>
             <FooterSection/>
         </>
     )
 }
+
+//            <OffersComponents/>

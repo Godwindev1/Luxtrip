@@ -4,7 +4,7 @@ function InfoFrame()
 {
     return(
         <>
-            <div className='w-full h-[100vh] bg-white text-[#0b1c0ea8] flex flex-col justify-start items-center z-[-10]  '>
+            <div id='About' className='w-full h-[100vh] bg-white text-[#0b1c0ea8] flex flex-col justify-start items-center z-[-10]  '>
                 <div className=' text-4xl text-center text-wrap font-semibold font-[sullivan] mb-7'  >
                      Unforgettable Comfort  <br /> and <br /> Unparralleled Memories </div>
                 <div className='text-[1.3rem]'>
